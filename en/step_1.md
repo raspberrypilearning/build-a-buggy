@@ -1,124 +1,80 @@
-# New project
+# Driving Motors
 
-Each project contains a set of directories for each language, you're set up now with an `en` directory that contains the necessary files to get you going.
+In this resource, you will learn how to build a robot buggy, that can drive autonomously (on it's own) or be remote controlled using a games console controller.
 
-* [meta.yml](#metayml)
-* [Steps - step_1.md, step_2.md, etc](#steps)
+## Driving Motors with a Raspberry Pi
 
+Your robot buggy is going to need a pair of motors, so that it can drive forwards, backwards and turn around.
+Unlike many other components, the Raspberry Pi is unable to drive motors straight from the GPIO pins. This is because motors draw too much power when they start up, and also becuase when they slow down they can act as generators force power back to the GPIO pin, which could damage the circuitry.
+For this reason you need to use an Motor Driver chip. These can be standalone chips that fit on a breadboard, or they can be mounted on a HAT that will sit on the Raspberry Pi.
+Some motor controller chips can use the Raspberry Pi as a power supply. Others require an external source of power, such as a battery pack.
 
-## meta.yml
+## Connecting your Motor Controller Board
 
-The `meta.yml` file sets lots of basic information for the project.
+1. Take your motor controller board, and using a small screwdriver, loosen the screws in each of the three terminal blocks.
 
-``` yml
-title: The title of the project
-hero_image: images/banner.png # The image used on the listing view and in the project header
-description: Project description # Used on the listing view
-original_url: https://codeclubprojects.org/en-GB/scratch/rock-band # Provides a link back to the original project
-theme: cc-prototype # sets the colour scheme
-duration: 1 # 1, 2 or 3
-listed: false # A boolean - `true` or`false` - that controls whether the project will appear on the listing view
-ingredient: false # A boolean - `true` or`false` - that controls whether the project will appear on the listing view if published to master branch
-interests: "jokes/pranks, sports, art/design, photography, games, outside/weather/nature, space, animals, music/sound"
-technologies: "scratch, python, html/css, micro:bit"
-steps: # A list of all the steps
-  - title: How to get started # Used as the sidebar title for the step
+1. The motors can be connected into their terminal blocks anyway around, and the screws then tightened so that they are held securely in place.
+
+1. The battery pack *must* be connected so that the red wire goes into port labeled UTN. The black wire goes into the port labeled GND. Make sure the battery pack is turned off as you do this.
+
+	![Board connected to power and motors](images/connect1.jpg)
+
+1. The style of motor controller board used in this project can sit directly onto the Raspberry Pi GPIO header pins, and uses pins 7, 8, 9 and 10. With motors and power connected, and your Raspberry Pi switched off, you can place the board over the pins of your Raspberry Pi as shown below.
+
+	![Board connected to Raspberry Pi](images/connect2.jpg)
+
+1. You can now power your Raspberry Pi up.
+
+## Controlling the Motors.
+
+1. The next step is to test that your motors work and that you can control them. For this you'll need a few lines of Python code. Open up IDLE, by clicking on `Menu` > `Programming` > `Python 3 (IDLE)`. Then click on `File` > `New File` to create a new Python script. You can save it straight away, calling it something like `robot.py`.
+
+1. The gpiozero module contains a class for robots, that makes it very easy to use motor controller boards. You just have to tell it which pins the board is using. Start by importing the `Robot` class and then giving your robot a name, and setting the pin numbers.
+
+```python
+from gpiozero import Robot
+remy = Robot(left = (7, 8), right = (9, 10))
 ```
 
-The list for interests and technologies is generated from the tags defined via the admin site. Once a project is tagged with e.g scratch it will start appearing in the generated list for new projects.
+	If you are using a different board, make sure that you use the correct pin numbers for the board you are using.
 
-## Steps
+1. Save an run your code, then using the shell you can control your motors, and test they are working, using the following commands:
 
-* [Links](#links)
-* [Resources](#resources)
-* [Images](#images)
-* [Challenges](#challenges)
-* [Definitions](#definitions)
-* [Hints](#hints)
-* [Collapsed ingredients](#collapsed-ingredients)
+	```python
+	>>> ## drive both motors forward
+	>>> remy.forward()
+	>>> ## drive both motors backwards
+	>>> remy.backwards()
+	>>> ## Drive the left motor forwards and the right motor backwards
+	>>> remy.right()
+	>>> ## Drive the right motor forwards and the left motor backwards
+	>>> remy.left()
+	>>> ## Stop both motord
+	>>> remy.stop()
+	```
+	
+1. You can find out which way the motors will need to be in your buggy, by driving them both forwards and then noting which way the axels turn.
 
-Project steps are written in the [Kramdown](https://kramdown.gettalong.org/) variety of markdown. There is a [quick reference guide](https://kramdown.gettalong.org/quickref.html) and [full syntax documentation](https://kramdown.gettalong.org/syntax.html). A [custom kramdown extension](https://github.com/RaspberryPiFoundation/kramdown_rpf) is used for hints, challenges & ingredients.
+1. If they are driving in different diections, you can always change the order the pin numbers are provided to the `Robot` class. For instance, this will swap the direction that the `right` motor goes.
 
-### Links, resources & images
+	```python
+	from gpiozero import Robot
+	remy = Robot(left = (7, 8), right = (10, 9))
+	```
+1. Next use the `remy.right()` command, and see which motor changes direction. The motor that changes direction will be the right motor, as it will start spinning backwards.
 
-See [kramdown documentation](https://kramdown.gettalong.org/quickref.html#links-and-images) for more details.
+1. You can add labels to your motors to indicate which is left and right, and which way is forward.
 
-#### Links
+![Motors Left and Right](images/label.jpg)
 
-A [link](http://kramdown.gettalong.org) to the kramdown homepage.
+## What Next?
 
-You can add  a link that opens in a new browser window/tab [like this](https://google.com/){:target="_blank"}
+You now have enough to make a primitive robot buggy. If that is as far as you want to go, then you can move onto the section about building a chasis for your robot. Below are some other worksheets to show you how to set up an ultrasonic sensor, a line sensor and a Wiimote to give greater control of your robot.
 
-#### Resources
-
-A [link to a file in the resources directory](resources/worksheet.pdf){:download='filename.pdf'}. The download part will make the file automatically download rather than be rendered in the browser, the filename you'd like the file to be saved with is the second bit after the `=`. The `/learning` application will ensure the resource is available.
-
-#### Images
-
-![Banner image](images/banner.png) - the link text becomes the alternative text for the image. The `/learning` application will ensure the image is available.
-
-#### Challenges
-
-``` markdown
---- challenge ---
-
-## Challenge: Improving your drum
-
-* Any markdown in here
-* will be parsed as normal
-
---- /challenge ---
-```
-
-
-### Definitions
-
-Definitions can be written using HTML abbreviations, which are a standard part of [kramdown](https://kramdown.gettalong.org/quickref.html#abbreviations)
-
-```
-To do this you might require a variable or a two word definition.
-
-*[variable]: An object that has a name and stores a value.
-
-*[two word]: Definitions are markdown, and can have [links](http://kramdown.gettalong.org) etc
-```
-
-
-### Hints
-
-A header for the hint, and all the html markup for hints will be automatically added.
-
-```
---- hints ---
---- hint ---
-
-Here's a hint of how to do this project.
-
-Any markdown you like within a hint:
-* item 1
-* item 2
-
---- /hint ---
---- hint ---
-Hint 2
-
---- /hint ---
---- hint ---
-
-Hint 3
---- /hint ---
---- hint ---
-Hint 4
---- /hint ---
-
---- /hints ---
-```
-
-### Ingredients
-
-An ingredient is a bit of reusable content from another project. All ingredients appear collapsed to users, the title for the collapsed element is the title of the ingredient project.
-
-To add an ingredient to your content:
-```
-[[[generic-scratch-new-project]]]
-```
+1. Using an ultrasonic sensor to detect obstacles
+1. Using a line sensor to follow lines
+1. Building a chasis for your robot
+1. Programming your buggy to avoid obstacles
+1. Programming your buggy to follow a line
+1. Programming yout buggy to use a Wiimote
+1. Programming your buggy to do everything
