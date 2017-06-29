@@ -1,0 +1,12 @@
+title: build-a-buggy
+hero_image: images/banner.png
+description: build-a-buggy description
+original_url: https://codeclubprojects.org/en-GB/scratch/rock-band
+theme: cc-prototype
+duration: 1 # 1, 2 or 3
+listed: false
+ingredient: false
+interests: "games, photography, physical computing"
+technologies: "electronics, physical computing, python, scratch"
+steps:
+  - title: Step one
