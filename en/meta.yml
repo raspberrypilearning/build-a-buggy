@@ -11,7 +11,7 @@ technologies: "electronics, physical computing, python"
 steps:
   - title: Introduction
   - title: What you will need
-  - title: Setup you motors
+  - title: Setup your motors
   - title: Left, Right, Forward, Backward
   - title: Assemble your robot
   - title: "Challenge: Program your robot"
