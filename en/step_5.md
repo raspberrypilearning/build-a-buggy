@@ -2,7 +2,7 @@
 
 There is no *right* way to build your robot chasis, but there are a few things to bare in mind:
 
-1. The chasis needs to house the Raspberry Pi and motor controller.
+- The chasis needs to house the Raspberry Pi and motor controller.
 - The chasis needs to also carry the batteries for the motor controller and the Raspberry Pi.
 - The chasis needs to allow the mounting of a pair of wheels, the line sensor and the ultrasonic distance sensor.
 
@@ -25,7 +25,7 @@ In this example a washing poweder tub was used, but the instructions can easily 
 
 - Now the wheels can be attached.
 
-	![wheels attached](images/wheels-atached.jpg)
+	![wheels attached](images/wheels-attached.jpg)
 
 - With the wheels in place a ball castor can be screwed to the front of the container to act as a thrid wheel. If you don't have a ball castor you could use another set of wheels or anything that's going to provide as little friction as possible. Maybe a ping-pong ball that has been cut in half, for instance.
 
