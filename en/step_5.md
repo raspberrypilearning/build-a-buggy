@@ -35,7 +35,10 @@ In this example a washing poweder tub was used, but the instructions can easily 
 
 	![wired](images/wired-up.jpg)
 
-- Next you can power your Raspberry Pi using a power brick. At this stage, you're probably going to want to connect to the Raspberry Pi remotely, so that you can still write and edit your code. There are instructions for [remotely working on a Raspberry Pi here.](https://www.raspberrypi.org/learning/teachers-guide/remote/).
+- Next you can power your Raspberry Pi using a power brick. At this stage, you're probably going to want to connect to the Raspberry Pi remotely. You can do this via SSH or VNC.
 
-	![powered pi](images/powered-pi.jpg)
+[[[rpi-ssh-access]]]
+[[[rpi-vnc-access]]]
+
+![powered pi](images/powered-pi.jpg)
 
