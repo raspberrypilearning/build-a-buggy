@@ -1,12 +1,16 @@
-title: build-a-buggy
+title: Build a robot buggy
 hero_image: images/banner.png
-description: build-a-buggy description
-original_url: https://codeclubprojects.org/en-GB/scratch/rock-band
+description: Build and control a robot buggy
+original_url: 
 theme: cc-prototype
-duration: 1 # 1, 2 or 3
+duration: 3
 listed: false
 ingredient: false
-interests: "games, photography, physical computing"
-technologies: "electronics, physical computing, python, scratch"
+interests: "physical computing, robots"
+technologies: "electronics, physical computing, python"
 steps:
-  - title: Step one
+  - title: Introduction
+  - title: What you will need
+  - title: Setup
+  - title: Assemble you robot
+  - title: Program your robot
