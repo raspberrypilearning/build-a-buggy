@@ -4,6 +4,8 @@
 
 - Choose either of the motors. On the motor, use a marker pen to label it as the Right motor and and arrow to indicate which way is forward. On the other motor, lable it left and use the same direction for forward.
 
+![labelled motors](images/motors_labelled.jpg)
+
 - Now open a Python shell (`Menu` --> `Programming` --> `Python 3 (IDLE)`
 
 - In the *shell* you can import the `Robot` class and create your `robot`
@@ -38,6 +40,8 @@ robot.forward(0.4)
 ```
 
 - Check that both motors are turning in the direction as shown in the diagram below.
+
+![direction of motors](images/motor_direction.png)
 
 - If the right hand motor is turning in the wrong direction, you can again alter your `robot` object, by switching the order of the pins. For instance:
 
