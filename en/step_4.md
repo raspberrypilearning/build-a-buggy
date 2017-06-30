@@ -1,4 +1,4 @@
-## Figuring out left from right
+## Left, Right, Foward, Backward
 
 - It is important to know which motor is your left motor and which one is your right motor. You also need to know which way they are driving to go forward, andwhich way they are driving to go backwards.
 

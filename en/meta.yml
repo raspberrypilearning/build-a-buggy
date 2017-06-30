@@ -12,5 +12,6 @@ steps:
   - title: Introduction
   - title: What you will need
   - title: Setup
-  - title: Assemble you robot
-  - title: Program your robot
+  - title: Left, Right, Forward, Backward
+  - title: Assemble your robot
+  - title: "Challenge: Program your robot"
