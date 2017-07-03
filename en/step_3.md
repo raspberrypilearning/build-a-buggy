@@ -1,6 +1,6 @@
 ## Setting up and testing
 
-Your first step will be to assemble the aprts of your buggy and test that you can control each of the motors.
+Your first step will be to assemble the parts of your buggy and test that you can control each of the motors.
 
 - Have a look at the section below, to see how to assemble the physical hardware in this project.
 

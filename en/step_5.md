@@ -18,7 +18,7 @@ In this example a washing poweder tub was used, but the instructions can easily 
 
 	![holes](images/container-hole.jpg)
 
-- Make sure you remember which is the right motor and which is the left. The motors are held in place with a little blutac. Remember that this is just the prototype, so you don't want to be glueing anything together just yet.
+- Make sure you remember which is the right motor and which is the left. The motors are held in place with a little blu-tac. Remember that this is just the prototype, so you don't want to be glueing anything together just yet.
 
 	![secured motors](images/secured-motors.jpg)
 
@@ -37,8 +37,10 @@ In this example a washing poweder tub was used, but the instructions can easily 
 
 - Next you can power your Raspberry Pi using a power brick. At this stage, you're probably going to want to connect to the Raspberry Pi remotely. You can do this via SSH or VNC.
 
+	![powered pi](images/powered-pi.jpg)
+
 [[[rpi-ssh-access]]]
 [[[rpi-vnc-access]]]
 
-![powered pi](images/powered-pi.jpg)
+
 
