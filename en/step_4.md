@@ -49,4 +49,4 @@ Now that you have the 'left' and 'right' sorted, you need to make sure you have 
 	robot = Robot(left = (9, 10), right = (8, 7))
 	```
 
-- You would do the same to the order of the pins for the left-hand motor if it was going in the wrong direction.
+- You would do the same to the order of the pins of the left-hand motor if it was going in the wrong direction.
