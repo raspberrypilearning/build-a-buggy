@@ -3,7 +3,7 @@
 ### Hardware
 - A Raspberry Pi
 - A motor controller board
-- 2 DC Motors
+- 2 DC motors
 - A 6V AA battery pack
 - 2 x Wheels
 - Ball caster (or suitable alternative)
