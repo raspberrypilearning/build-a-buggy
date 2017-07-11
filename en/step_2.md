@@ -3,14 +3,14 @@
 ### Hardware
 - A Raspberry Pi
 - A motor controller board
-- 2 DC Motors
+- 2 DC motors
 - A 6V AA battery pack
 - 2 x Wheels
-- Ball castor (or suitable alternative)
+- Ball caster (or suitable alternative)
 
 ### Software
-- The latest version of the Raspbian Operating System
+- The latest version of the Raspbian operating system
 
-### Additional Extras
+### Additional extras
 - A plastic container
-- blu-tac or similar
+- Blu Tack or similar

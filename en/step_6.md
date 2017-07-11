@@ -1,6 +1,6 @@
 ## Program your robot
 --- challenge ---
-Now is your opportunity to program your robot.
+Now is your opportunity to program your robot!
 Try and complete one of the following challenges:
 1. Make your robot drive in a perfect square
 1. Make your robot drive in a zigzag pattern

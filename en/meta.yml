@@ -6,12 +6,13 @@ theme: cc-prototype
 duration: 3
 listed: false
 ingredient: false
+copyedit: true
 interests: "physical computing, robots"
 technologies: "electronics, physical computing, python"
 steps:
   - title: Introduction
   - title: What you will need
-  - title: Setup your motors
-  - title: Left, Right, Forward, Backward
+  - title: Set up your motors
+  - title: Left, right, forward, backward
   - title: Assemble your robot
-  - title: "Challenge: Program your robot"
+  - title: "Challenge: program your robot"
