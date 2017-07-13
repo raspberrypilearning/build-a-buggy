@@ -1,12 +1,30 @@
 ## Program your robot
+
+You can now write a program to control your robot, and make it do any number of things.
+
+Here's a simple program to make it go in a square shape (although you may need to change the `sleep` functions:
+
+```python
+from gpiozero import Robot
+robot = Robot(left = (7, 8), right = (9, 10))
+while True:
+	robot.forward()
+	sleep(3)
+	robot.stop()
+	robot.right()
+	sleep(1)
+	robot.stop()
+```
+
 --- challenge ---
 Now is your opportunity to program your robot!
 Try and complete one of the following challenges:
-1. Make your robot drive in a perfect square
+1. Make your robot drive in a perfect circle
 1. Make your robot drive in a zigzag pattern
 1. Make a small maze from household objects and program your robot to navigate it
 
 Don't forget, you only have five basic commands to use:
+
 ```python
 robot.forward()
 robot.backward()
