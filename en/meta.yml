@@ -2,11 +2,12 @@ title: Build a robot buggy
 hero_image: images/banner.png
 description: Build and control a robot buggy
 original_url: 
-theme: cc-prototype
+theme: violet
 duration: 3
-listed: false
+listed: true
 ingredient: false
 copyedit: true
+curriculum: design-0, programming-2, phys-comp-2, manufacture-1, community-0
 interests: "physical computing, robots"
 technologies: "electronics, physical computing, python"
 steps:
