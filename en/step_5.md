@@ -64,4 +64,4 @@ In this example, we used a washing powder tub, but the instructions can easily b
 [[[rpi-vnc-access]]]
 
 
-
+- If you are using SSH, you can run your program by typing `python3 motor_test.py`.
