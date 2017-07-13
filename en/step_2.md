@@ -8,7 +8,7 @@
 - [2 x Wheels](http://4tronix.co.uk/store/index.php?rt=product/product&path=66_72&product_id=175)
 - [Ball caster](http://4tronix.co.uk/store/index.php?rt=product/product&product_id=498) (or suitable alternative)
 
-The components above are all included in the [CamJam Kit 3](http://camjam.me/?page_id=1035)
+The components above are all included in the [CamJam Kit 3](http://camjam.me/?page_id=1035).
 ### Software
 - The latest version of the Raspbian operating system
 
