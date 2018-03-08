@@ -7,7 +7,7 @@ duration: 3
 listed: true
 ingredient: false
 copyedit: true
-curriculum: design-0, programming-2, phys-comp-2, manufacture-1, community-0
+curriculum: designer, design-0, programming-2, phys-comp-2, manufacture-1, community-0
 interests: "physical computing, robots, big-project"
 technologies: "electronics, physical computing, python"
 steps:
