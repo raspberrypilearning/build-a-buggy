@@ -1,15 +1,22 @@
-## Setting up and testing
+## Assembling the motors and board
 
-Your first step will be to assemble the parts of your buggy and test that you can control each of the motors.
+The first thing you will want to do is to connect your motor controller board to your Raspberry Pi, the battery pack and your two motors, to test that they are all working.
+The instructions here are for L298N Dual H Bridge DC Stepper Motor Driver Controller Board, however they will be pretty similar for most motor controller boards, but you should consult the documentation for your board, if you are using a different one.
 
-- Have a look at the section below to see how to assemble the physical hardware needed for this project.
+### Soldering wires to your motors
 
-[[[rpi-physical-connect-motor-controller]]]
+Most motors, when purchased, come without soldered wires, so you will need to add these on. If you have never soldered before, then you might like to have a look at out [Getting Started with Soldering](https://projects.raspberrypi.org/en/projects/getting-started-with-soldering)
 
-- Once you have assembled the hardware and your Raspberry Pi is powered up, you can test that the motors are both working.
+- Remove the plastic clip from the motor, to make soldering to the contacts easier.
 
-- Have a look at the section below to see how you can control the motors using Python.
+	![remove clip](images/motor-remove-clip.jpg)
 
-[[[rpi-python-motor-controller-control]]]
+- Strip two wires to reveal the metal core.
+
+	![strip wires](images/strip-wire.jpg)
 	
-- Test that your motors are responding to commands, and then proceed to the next section.
+- Solder the wires to each of the terminals on the motor. It doesn't matter which wire goes to which terminal.
+
+	![solder wires](images/solder-motor.jpg)
+
+### Connect the board.
