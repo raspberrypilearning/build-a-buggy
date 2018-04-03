@@ -3,6 +3,9 @@
 - Note that not all of the following hardware is required to create the buggy. However, if you are planning to add autonomous capability (self-driving) to your robor buggy, then you will need some additional bits.
 
 ### Hardware
+
+![hardward](images/hardware.jpg)
+
 #### Basic Buggy
 - Raspberry Pi 3
 - Motor Controller Board
