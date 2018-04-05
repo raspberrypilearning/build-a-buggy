@@ -23,7 +23,7 @@ robby = Robot(left = (7, 8), right = (9, 10))
 
 --- task ---
 Save you file and call it `robby.py` or something similar. You can then run it by pressing **F5** on your keyboard
---- /task ----
+--- /task ---
 
 --- task ---
 Now switch over to the shell and type the following, to observe which way the motors turn.
@@ -37,7 +37,7 @@ You can stop them by typing `robot.stop()`
 ![motors turning](images/motor-test.gif)
 --- /task ---
 
---- task --
+--- task ---
 Now, type the following command, and note which motor changes direction on the second command. 
 
 ```python
@@ -61,7 +61,7 @@ Now that you have the 'left' and 'right' sorted, you need to make sure you have 
 Again, drive both motors forward.
 
 ```python
-robot.forward(0.4)
+robby.forward(0.4)
 ```
 
 Check that both motors are turning in the direction shown in the diagram below.
