@@ -1,14 +1,13 @@
 ## Assemble your robot
 
-There is no *right* way to build your robot chassis, but there are a few things to bare in mind:
+There is no *right* way to build your prototype robot chassis, but there are a few things to bare in mind:
 
 - The chassis needs to house the Raspberry Pi and motor controller.
 - The chassis needs to also carry the batteries for the motor controller and the Raspberry Pi.
-- The chassis needs to allow the mounting of a pair of wheels, the line sensor and the ultrasonic distance sensor.
+- The chassis needs to allow the mounting of a pair of wheels.
+- You may want to later add a couple of line sensors and the ultrasonic distance sensor or lidar to the chassis.
 
-In this example a washing powder tub was used, but the instructions can easily be adapted to any type of container or even a monstrous Lego construction.
-
-![box](images/container.jpg)
+It's always a good idea to build a prototype chassis first. In a later project, you can learn how to laser-cut or 3D print a chassis, but in this project, a carbboard box is used as a temporary solution.
 
 - The first step is to place your motors into the chassis. 
 
