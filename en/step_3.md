@@ -59,3 +59,21 @@ Tighten the screws so that the wires are held firmly in place.
 ![battery terminals](images/battery-terminals.jpg)
 --- /task ---
 
+### Connecting the board to your Raspberry Pi
+
+The board used in this project needs to be wired to the Raspberry Pi. Other boards may bary in how they are connected, and some can simply be placed onto the Raspberry Pi GPIO pins as a hat. Make sure you look at the documentation for your board if this is the case.
+
+On the board used here there are pins labeled `In1`, `In2`, `In3` and `In4`, as well as 2 `GND` pins. Which GPIO pins on your Pi that you use is up to you, but for the purposes of this project GPIO pins `7`, `8`, `9` and `10` have been used.
+
+--- task ---
+Using five female-female jumper leads connect up the Raspberry Pi GPIO pins to the pins on the motor controller board.
+|GPIO Pin|Board Pin|
+|--------|---------|
+|`7`|`In1`|
+|`8`|`In2`|
+|`9`|`In3`|
+|`10`|`In4`|
+|`GND`|`GND`|
+
+![GPIO to board](images/gpio-board.jpg)
+--- /task ---
