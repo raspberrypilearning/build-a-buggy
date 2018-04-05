@@ -22,10 +22,40 @@ Remove the plastic clip from the motor, to make soldering to the contacts easier
 --- /task ---
 
 --- task ---
-- Solder the wires to each of the terminals on the motor. It doesn't matter which wire goes to which terminal.
+Solder the wires to each of the terminals on the motor. It doesn't matter which wire goes to which terminal.
 
 ![solder wires](images/solder-motor.gif)
 --- /task ---
 
+### Connect the motors to the board
 
-### Connect the board.
+You will need to connect the motors to the board. For this you will require a small screwdriver.
+
+--- task ---
+Using a screwdriver, loosen the screws in the terminal blocks labeled `OUT1`, `OUT2`, `OUT3` and `OUT4`. Have a look at the documentation for your board if your labels are different. Insert the stripped ends of wire into the terminal blocks.
+
+![inserted wires](images/wires-in-board.jpg)
+--- /task ---
+
+--- task ---
+Tighten the screws up, so that the wires are held firmly in the terminal blocks
+
+![terminal block](images/wire-in-block.jpg)
+--- /task ---
+
+### Powering the motors
+
+The motors require more power than the Raspberry Pi could provide. For this reason you use 4 AA batteries to power the motors.
+
+--- task ---
+Loosen the screws in the terminal block labeled `VCC`, `GND` and `5V`. Take the AA battery holder and insert the red wire into the terminal block labeled `VCC`. The black wire goes into the block labeled `GND`. It is important that you get this the correct way around.
+
+![battery holder](images/battery-holder.jpg)
+--- /task ---
+
+--- task ---
+Tighten the screws so that the wires are held firmly in place.
+
+![battery terminals](images/battery-terminals.jpg)
+--- /task ---
+
