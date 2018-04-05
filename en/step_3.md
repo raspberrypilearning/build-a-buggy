@@ -68,13 +68,13 @@ On the board used here there are pins labeled `In1`, `In2`, `In3` and `In4`, as 
 --- task ---
 Using five female-female jumper leads connect up the Raspberry Pi GPIO pins to the pins on the motor controller board.
 
-|GPIO Pin|Board Pin|
-|:------:|:-------:|
-|`7`|`In1`|
-|`8`|`In2`|
-|`9`|`In3`|
-|`10`|`In4`|
-|`GND`|`GND`|
+|GPIO Pin|Connects to|Board Pin|
+|:------:|:---:|   |:-------:|
+|`7`|<-->|`In1`|
+|`8`|<-->|`In2`|
+|`9`|<-->|`In3`|
+|`10`|<-->|`In4`|
+|`GND`|<-->|`GND`|
 
 ![GPIO to board](images/gpio-board.jpg)
 --- /task ---
