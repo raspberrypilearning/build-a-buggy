@@ -2,9 +2,11 @@
 
 It is important to know which is your left motor and which is your right motor. You also need to know which way they are driving to go forward, and which way they are driving to go backwards.
 
+--- task ---
 Choose either of the motors. Use a marker pen to label it 'right' and draw an arrow on it to indicate which way is forward. Label the other motor 'left' and draw an arrow on it pointing in the same direction as your first one.
 
 ![labeled motors](images/motors_labelled.jpg)
+--- /task ---
 
 --- task ---
 Now open a Python shell by clicking **Menu** > **Programming** > **Python 3 (IDLE)**. Then click **File** > **New File** to open a new window.
