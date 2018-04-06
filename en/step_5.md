@@ -7,59 +7,48 @@ There is no *right* way to build your prototype robot chassis, but there are a f
 - The chassis needs to allow the mounting of a pair of wheels.
 - You may want to later add a couple of line sensors and the ultrasonic distance sensor or lidar to the chassis.
 
-It's always a good idea to build a prototype chassis first. In a later project, you can learn how to laser-cut or 3D print a chassis, but in this project, a carbboard box is used as a temporary solution.
+It's always a good idea to build a prototype chassis first. In a later project, you can learn how to laser-cut or 3D print a chassis, but in this project, a cardboard box is used as a temporary solution.
 
-- The first step is to place your motors into the chassis. 
+![chassis-0](images/chassis-0.jpg)
 
-There is no right way to build your robot chassis, but there are a few things to bear in mind. The chassis needs to:
+The first step is to place your motors into the chassis. 
 
-- House the Raspberry Pi and motor controller
-- Carry the batteries for the Raspberry Pi and the motor controller
-- Allow the mounting of a pair of wheels, the line sensor, and the ultrasonic distance sensor
+--- task ---
+Place your motors inside the box, in roughly the position that you would like them to sit. Then use a pen to mark the place where the motors' axle will need to pass through the walls of the box.
+![chassis-1](images/chassis-1.jpg)
+--- /task ---
 
-In this example, we used a washing powder tub, but the instructions can easily be adapted to any type of container or even a monstrous Lego construction.
+--- task ---
+Use a sharp object to poke holes through the sides of the box, so that the motors' axles can fit through.
+![chassis-2](images/chassis-2.jpg)
+![chassis-3](images/chassis-3.jpg)
+--- /task ---
 
-![box](images/container.jpg)
+--- task ---
+You will need to fix the motors in place. Use an adhesive putty or tape to hold them down.
+![chassis-4](images/chassis-4.jpg)
+--- /task ---
 
-- First, place your motors into the chassis. 
+--- task ---
+Once the motors are in place, you can attach the wheels to the axles.
+![chassis-5](images/chassis-5.jpg)
+--- /task ---
 
+--- task ---
+With the wheels in place a ball castor can be screwed to the front of the container to act as a third wheel.
+![chassis-6](images/chassis-6.jpg)
+![chassis-7](images/chassis-7.jpg)
+--- /task ---
 
-	![motors in container](images/placed-motors.jpg)
-	
-- Here, two holes have been cut into the container to allow the motor axles to pass through. 
+--- task ---
+If you're using a power bank, you can now power up your Raspberry Pi. If you are making your own power bank, then follow the guide below
+![chassis-8](images/chassis-8.jpg)
 
-	![holes](images/container-hole.jpg)
+--- /task ---
 
-
-- Make sure you remember which is the right motor and which is the left. The motors are held in place with a little blu-tac. Remember that this is just the prototype, so you don't want to be gluing anything together just yet.
-
-- Make sure you remember which motor is the right-hand one and which the left-hand one. The motors are held in place with a little Blu Tack. You're building a prototype, so you don't want to be glueing anything just yet.
-
-
-	![secured motors](images/secured-motors.jpg)
-
-- Now the wheels can be attached.
-
-	![wheels attached](images/wheels-attached.jpg)
-
-
-- With the wheels in place a ball castor can be screwed to the front of the container to act as a third wheel. If you don't have a ball castor you could use another set of wheels or anything that's going to provide as little friction as possible. Maybe a ping-pong ball that has been cut in half, for instance.
-
-- With the wheels in place, a ball caster can be screwed to the front of the container to act as a third wheel. If you don't have a ball caster, you can use another set of wheels or anything that's going to provide as little friction as possible - maybe a table tennis ball that has been cut in half, for instance.
-
-
-	![ball castor](images/ball-castor.jpg)
-
-- The next step is to wire up the motors to the Raspberry Pi.
-
-	![wired](images/wired-up.jpg)
-
-- You can power your Raspberry Pi using a power brick. At this stage, you're probably going to want to connect to the Raspberry Pi remotely. You can do this via SSH or VNC.
-
-	![powered pi](images/powered-pi.jpg)
+To use your Raspberry Pi, without connecting a mouse, monitor or keyboard, you can use SSH or VNC to remotely access it.
 
 [[[rpi-ssh-access]]]
 [[[rpi-vnc-access]]]
 
 
-- If you are using SSH, you can run your program by typing `python3 motor_test.py`.
