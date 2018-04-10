@@ -46,6 +46,8 @@ If you're using a power bank, you can now power up your Raspberry Pi. If you are
 
 --- /task ---
 
+[[[generic-electronics-power-bank]]]
+
 To use your Raspberry Pi, without connecting a mouse, monitor or keyboard, you can use SSH or VNC to remotely access it.
 
 [[[rpi-ssh-access]]]
