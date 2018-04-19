@@ -6,7 +6,7 @@ The instructions here are for L298N Dual H Bridge DC Stepper Motor Driver Contro
 
 ### Soldering wires to your motors
 
-Most motors you can buy don't have wires, so you will need to solder these on. If you have never soldered before, then you might like to have a look at out [Getting started with soldering](https://projects.raspberrypi.org/en/projects/getting-started-with-soldering) resource.
+Most motors you can buy don't have wires, so you will need to solder these on. If you have never soldered before, then have a look at our [Getting started with soldering](https://projects.raspberrypi.org/en/projects/getting-started-with-soldering) resource.
 
 --- task ---
 Strip the ends of the wires to reveal the metal core.
