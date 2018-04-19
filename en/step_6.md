@@ -1,8 +1,8 @@
-## Program your robot
+## Challenge: program your robot
 
 You can now write a program to control your robot and make it do any number of things.
 
-Here's a simple program to make it go in a square shape (although you may need to change the `sleep` functions):
+Here's a simple script to make it go in a square shape (you may need to change the `sleep` functions slightly):
 
 ```python
 from gpiozero import Robot
