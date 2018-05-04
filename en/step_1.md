@@ -2,8 +2,10 @@
 
 In this project you will build a robot buggy that you can program to move around using simple Python commands.
 
+![finished](images/finished.gif)
+
 ### What you will learn
-- How to setup a motor controller board with two motors
+- How to set up a motor controller board with two motors
 - How to control motors using Python
 - How to build a robot chassis
 
