@@ -17,7 +17,7 @@ In the new file, type the following to import the `Robot` class and create a `Ro
 
 ```python
 from gpiozero import Robot
-robby = Robot(left = (7, 8), right = (9, 10))
+robby = Robot(left=(7,8), right=(9,10))
 ```
 --- /task ---
 
@@ -50,8 +50,12 @@ The `0.4` makes the motors go a little slower, so it is easy to see which way th
 --- task ---
 The motor that changed direction is the right-hand motor. If that was the one you labeled **'right'**, then there's nothing to change yet. If it was the one you labeled **'left'**, you need to alter your `Robot` object in your file to switch around the `left` and `right` pin numbers:
 
+
 ```python
-robby = Robot(left = (9, 10), right = (7, 8))
+## e.g. change
+robby = Robot(left=(7,8), right=(9,10))
+## to
+robby = Robot(left=(9,10), right=(7,8))
 ```
 --- /task --- 
 
@@ -71,7 +75,10 @@ Check that both motors are turning in the direction shown in the diagram below.
 If the right-hand motor is turning in the wrong direction, alter your `robot` object by switching the order of the GPIO pin numbers. For instance:
 
 ```python
-robby = Robot(left = (9, 10), right = (8, 7))
+## e.g. change
+robby = Robot(left=(9,10), right=(7,8))
+## to
+robby = Robot(left=(9 10), right=(8,7))
 ```
 
 If the left-hand motor is turning the wrong way, then do the same for its pin numbers.
