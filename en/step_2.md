@@ -16,16 +16,20 @@ Strip the ends of the wires to reveal the metal core.
 --- /task ---
 
 --- task ---
-Remove the plastic clip from the motor to make soldering to the contacts easier.
+Remove the plastic clip from the motor to make soldering to the contacts easier. You can do this with a screwdriver.
 
 ![remove clip](images/motor-remove-clip.jpg)
 
 --- /task ---
 
 --- task ---
-Solder the wires to each of the terminals on the motor. It doesn't matter which wire goes to which terminal.
+Solder the wires to each of the terminals on the motor. It doesn't matter which wire goes to which terminal. The reattach the plastic clips.
 
 ![solder wires](images/solder-motor.gif)
+--- /task ---
+
+--- task ---
+It's a good idea to wrap the ends of the motors in tape, to stop the soldered joints from breaking.
 --- /task ---
 
 ### Connect the motors to the board
