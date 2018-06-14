@@ -13,7 +13,7 @@ It's always a good idea to build a prototype chassis first. Eventually, you can 
 The first step is to place your motors into the chassis. 
 
 --- task ---
-Place your motors inside the box, in roughly the position that you would like them to sit. Then use a pen to mark the place where the motors' axle will need to pass through the walls of the box.
+Place your motors inside the box, in roughly the position that you would like them to sit. Then use a pen to mark the place where the motors' axle will need to pass through the walls of the box. Make sure you are giving your wheels enough room to spin around.
 ![chassis-1](images/chassis-1.jpg)
 --- /task ---
 
