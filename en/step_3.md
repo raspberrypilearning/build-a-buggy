@@ -1,81 +1,85 @@
-## Assembling the motors and board
+## Left, right, forward, backward
 
-The first thing you will want to do is to connect your motor controller board to your Raspberry Pi, the battery pack, and your two motors, to test that they are all working.
-
-The instructions here are for L298N Dual H Bridge DC Stepper Motor Driver Controller Board, and they will be pretty similar for most motor controller boards. Check the documentation for your board if you are using a different one.
-
-### Soldering wires to your motors
-
-Most motors you can buy don't have wires, so you will need to solder these on. If you have never soldered before, then have a look at our [Getting started with soldering](https://projects.raspberrypi.org/en/projects/getting-started-with-soldering) resource.
+You need to figure out which is your left motor and which is your right motor. You also need to know which way they are driving to go forward, and which way they are driving to go backwards.
 
 --- task ---
-Strip the ends of the wires to reveal the metal core.
+Choose one of the motors. Use a marker pen to label it 'right' and draw an arrow on it to indicate which way is forward. Label the other motor 'left' and draw an arrow on it pointing in the same direction as your first one.
 
-![strip wires](images/strip-wire.jpg)
-	
+![labeled motors](images/motors_labelled.jpg)
 --- /task ---
 
 --- task ---
-Remove the plastic clip from the motor to make soldering to the contacts easier.
-
-![remove clip](images/motor-remove-clip.jpg)
-
+Now open a Python shell by clicking **Menu** > **Programming** > **Python 3 (IDLE)**. Then click **File** > **New File** to open an empty script.
 --- /task ---
 
 --- task ---
-Solder the wires to each of the terminals on the motor. It doesn't matter which wire goes to which terminal.
+In the new file, type the following to import the `Robot` class and create a `Robot` object. You can name it anything you like. In this resource, the robot is called `robby`.
 
-![solder wires](images/solder-motor.gif)
---- /task ---
-
-### Connect the motors to the board
-
-You will need to connect the motors to the board. For this you will require a small screwdriver.
-
---- task ---
-Using a screwdriver, loosen the screws in the terminal blocks labeled **OUT1**, **OUT2**, **OUT3**, and **OUT4**. Have a look at the documentation for your board if your labels are different. Insert the stripped ends of wire into the terminal blocks.
-
-![inserted wires](images/wires-in-board.jpg)
+```python
+from gpiozero import Robot
+robby = Robot(left=(7,8), right=(9,10))
+```
 --- /task ---
 
 --- task ---
-Tighten the screws up so that the wires are held firmly in the terminal blocks.
-
-![terminal block](images/wire-in-block.jpg)
---- /task ---
-
-### Powering the motors
-
-The motors require more power than the Raspberry Pi can provide. Therefore, you will use four AA batteries to power them.
-
---- task ---
-Loosen the screws in the terminal blocks labeled **VCC**, **GND**, and **5V**. Take the AA battery holder and insert the red wire into the **VCC** terminal block. The black wire goes into the **GND** block. It is important that you get this the correct way around.
-
-![battery holder](images/battery-holder.jpg)
+Save you file and call it `robby.py` or something similar. You can then run it by pressing <kbd>F5</kbd> on your keyboard.
 --- /task ---
 
 --- task ---
-Tighten the screws so that the wires are held firmly in place.
+Now switch over to the shell and type the following to observe which way the motors turn.
 
-![battery terminals](images/battery-terminals.jpg)
+```python
+robby.forward()
+```
+
+You can stop them by typing `robot.stop()`.
+
+![motors turning](images/motor-test.gif)
 --- /task ---
 
-### Connecting the board to your Raspberry Pi
+--- task ---
+Now, type the following command, and note which motor changes direction on the second command. 
 
-The board used in this project needs to be wired to the Raspberry Pi. Other boards may connect differently, and some boards can simply be placed onto the Raspberry Pi GPIO pins as a HAT. Make sure you look at the documentation for your board to see whether this is the case.
-
-On the board used here there are pins labeled **In1**, **In2**, **In3**, and **In4**, as well as two **GND** pins. Which GPIO pins on your Pi that you use is up to you; in this project, **GPIO 7**, **8**, **9**, and **10** have been used.
+```python
+robby.forward(0.4)
+robby.right(0.4)
+```
+The `0.4` makes the motors go a little slower, so it is easy to see which way they turn.
+--- /task ---
 
 --- task ---
-Use five female-to-female jumper leads to connect the Raspberry Pi GPIO pins to the pins on the motor controller board.
+The motor that changed direction is the right-hand motor. If that was the one you labeled **'right'**, then there's nothing to change yet. If it was the one you labeled **'left'**, you need to alter your `Robot` object in your file to switch around the `left` and `right` pin numbers:
 
-|GPIO pin|connects to|board pin|
-|:------:|:---:|:-------:|
-|**7**|<-->|**In1**|
-|**8**|<-->|**In2**|
-|**9**|<-->|**In3**|
-|**10**|<-->|**In4**|
-|**GND**|<-->|**GND**|
 
-![GPIO to board](images/gpio-board.jpg)
+```python
+## e.g. change
+robby = Robot(left=(7,8), right=(9,10))
+## to
+robby = Robot(left=(9,10), right=(7,8))
+```
+--- /task --- 
+
+Now that you have the 'left' and 'right' sorted, you need to make sure you have **forward** and **backward** set up correctly.
+
+--- task ---
+Again drive both motors forward.
+
+```python
+robby.forward(0.4)
+```
+
+Check that both motors are turning in the direction shown in the diagram below.
+
+![direction of motors](images/motor_direction.png)
+
+If the right-hand motor is turning in the wrong direction, alter your `robot` object by switching the order of the GPIO pin numbers. For instance:
+
+```python
+## e.g. change
+robby = Robot(left=(9,10), right=(7,8))
+## to
+robby = Robot(left=(9 10), right=(8,7))
+```
+
+If the left-hand motor is turning the wrong way, then do the same for its pin numbers.
 --- /task ---

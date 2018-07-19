@@ -1,78 +1,53 @@
-## Left, right, forward, backward
+## Assemble your robot
 
-You need to figure out which is your left motor and which is your right motor. You also need to know which way they are driving to go forward, and which way they are driving to go backwards.
+There is no right way to build your prototype robot chassis, but there are a few things to bear in mind:
+
+- The chassis needs to house the Raspberry Pi, motor controller, and batteries.
+- The chassis needs to allow the mounting of a pair of wheels.
+- You may want to later add a couple of line sensors, and an ultrasonic distance sensor or a lidar sensor to the chassis.
+
+It's always a good idea to build a prototype chassis first. Eventually, you can learn how to laser-cut or 3D print a chassis, but in this project, a cardboard box is used as a temporary solution.
+
+![chassis-0](images/chassis-0.jpg)
+
+The first step is to place your motors into the chassis. 
 
 --- task ---
-Choose one of the motors. Use a marker pen to label it 'right' and draw an arrow on it to indicate which way is forward. Label the other motor 'left' and draw an arrow on it pointing in the same direction as your first one.
-
-![labeled motors](images/motors_labelled.jpg)
+Place your motors inside the box, in roughly the position that you would like them to sit. Then use a pen to mark the place where the motors' axle will need to pass through the walls of the box. Make sure you are giving your wheels enough room to spin around.
+![chassis-1](images/chassis-1.jpg)
 --- /task ---
 
 --- task ---
-Now open a Python shell by clicking **Menu** > **Programming** > **Python 3 (IDLE)**. Then click **File** > **New File** to open an empty script.
+Use a sharp object to poke holes through the sides of the box so that the motors' axles can fit through.
+![chassis-2](images/chassis-2.jpg)
+![chassis-3](images/chassis-3.jpg)
 --- /task ---
 
 --- task ---
-In the new file, type the following to import the `Robot` class and create a `Robot` object. You can name it anything you like. In this resource, the robot is called `robby`.
-
-```python
-from gpiozero import Robot
-robby = Robot(left = (7, 8), right = (9, 10))
-```
+You will need to fix the motors in place. Use an adhesive putty or tape to hold them down.
+![chassis-4](images/chassis-4.jpg)
 --- /task ---
 
 --- task ---
-Save you file and call it `robby.py` or something similar. You can then run it by pressing <kbd>F5</kbd> on your keyboard.
+Once the motors are in place, you can attach the wheels to the axles.
+![chassis-5](images/chassis-5.jpg)
 --- /task ---
 
 --- task ---
-Now switch over to the shell and type the following to observe which way the motors turn.
-
-```python
-robby.forward()
-```
-
-You can stop them by typing `robot.stop()`.
-
-![motors turning](images/motor-test.gif)
+When the wheels are in place, you can screw a ball caster to the front of the container to act as a third wheel.
+![chassis-6](images/chassis-6.jpg)
+![chassis-7](images/chassis-7.jpg)
 --- /task ---
 
 --- task ---
-Now, type the following command, and note which motor changes direction on the second command. 
+If you're using a power bank, you can now power up your Raspberry Pi. If you want to make your own power bank, then follow the guide below.
+![chassis-8](images/chassis-8.jpg)
 
-```python
-robby.forward(0.4)
-robby.right(0.4)
-```
-The `0.4` makes the motors go a little slower, so it is easy to see which way they turn.
 --- /task ---
 
---- task ---
-The motor that changed direction is the right-hand motor. If that was the one you labeled **'right'**, then there's nothing to change yet. If it was the one you labeled **'left'**, you need to alter your `Robot` object in your file to switch around the `left` and `right` pin numbers:
+[[[generic-electronics-power-bank]]]
 
-```python
-robby = Robot(left = (9, 10), right = (7, 8))
-```
---- /task --- 
+To use your Raspberry Pi without connecting a mouse, monitor, or keyboard, you can remotely access it via SSH or VNC.
 
-Now that you have the 'left' and 'right' sorted, you need to make sure you have **forward** and **backward** set up correctly.
-
---- task ---
-Again drive both motors forward.
-
-```python
-robby.forward(0.4)
-```
-
-Check that both motors are turning in the direction shown in the diagram below.
-
-![direction of motors](images/motor_direction.png)
-
-If the right-hand motor is turning in the wrong direction, alter your `robot` object by switching the order of the GPIO pin numbers. For instance:
-
-```python
-robby = Robot(left = (9, 10), right = (8, 7))
-```
-
-If the left-hand motor is turning the wrong way, then do the same for its pin numbers.
---- /task ---
+[[[rpi-ssh-access]]]
+[[[rpi-vnc-access]]]
