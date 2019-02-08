@@ -1,6 +1,6 @@
 ## Assemble your robot
 
-There is no right way to build your prototype robot chassis, but there are a few things to bear in mind:
+There is no "right" way to build your prototype robot chassis, but there are a few things to bear in mind:
 
 - The chassis needs to house the Raspberry Pi, motor controller, and batteries.
 - The chassis needs to allow the mounting of a pair of wheels.
