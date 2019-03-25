@@ -22,7 +22,7 @@ This resource covers elements from the following strands of the [Raspberry Pi Di
 ---
 title: What you will need
 ---
-- Note that not all of the following hardware is required to create the buggy. However, if you are planning to add autonomous capability (self-driving) to your robor buggy, then you will need additional bits in the 'optional' list.
+- Note that not all of the following hardware is required to create the buggy. However, if you are planning to add autonomous capability (self-driving) to your robot buggy, then you will need additional bits in the 'optional' list.
 
 ### Hardware
 
