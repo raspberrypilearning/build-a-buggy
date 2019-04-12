@@ -78,7 +78,7 @@ If the right-hand motor is turning in the wrong direction, alter your `robot` ob
 ## e.g. change
 robby = Robot(left=(9,10), right=(7,8))
 ## to
-robby = Robot(left=(9 10), right=(8,7))
+robby = Robot(left=(9,10), right=(8,7))
 ```
 
 If the left-hand motor is turning the wrong way, then do the same for its pin numbers.
