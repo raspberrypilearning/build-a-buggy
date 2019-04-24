@@ -31,7 +31,7 @@ title: What you will need
 #### Basic buggy
 - Raspberry Pi 3
 - Motor controller board
-- 2 × 12V DC motors
+- 2 × 3V - 6V DC motors
 - 2 × wheels
 - 1 × AA battery holder (for 4 AA batteries)
 - 4 × AA batteries
