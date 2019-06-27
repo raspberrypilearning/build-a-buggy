@@ -81,5 +81,7 @@ Use five female-to-female jumper leads to connect the Raspberry Pi GPIO pins to 
 |**10**|<-->|**In4**|
 |**GND**|<-->|**GND**|
 
+If your board does not have a **GND** pin, then strip the end of the female to female wire and secure it into the **GND** terminal block that your battery pack feeds into.
+
 ![GPIO to board](images/gpio-board.jpg)
 --- /task ---
