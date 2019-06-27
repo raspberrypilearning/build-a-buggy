@@ -37,7 +37,7 @@ It's a good idea to wrap the ends of the motors in tape, to stop the soldered jo
 You will need to connect the motors to the board. For this you will require a small screwdriver.
 
 --- task ---
-Using a screwdriver, loosen the screws in the terminal blocks labeled **OUT1**, **OUT2**, **OUT3**, and **OUT4**. Have a look at the documentation for your board if your labels are different. Insert the stripped ends of wire into the terminal blocks.
+Using a screwdriver, loosen the screws in the terminal blocks labeled **OUT1**, **OUT2**, **OUT3**, and **OUT4**. Have a look at the documentation for your board if your labels are different. Strip the ends of the wires (you can snip off the male or female ends if you need to) and insert the stripped ends of wire into the terminal blocks.
 
 ![inserted wires](images/wires-in-board.jpg)
 --- /task ---
