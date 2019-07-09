@@ -29,7 +29,7 @@ Solder the wires to each of the terminals on the motor. It doesn't matter which 
 --- /task ---
 
 --- task ---
-It's a good idea to wrap the ends of the motors in tape, to stop the soldered joints from breaking.
+Trim the tips of the wires to ensure they do not touch the metal casing of the motor. It's also a good idea to wrap the ends of the motors in tape, to stop the soldered joints from breaking.
 --- /task ---
 
 ### Connect the motors to the board
