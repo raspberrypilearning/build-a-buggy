@@ -9,11 +9,11 @@ Choose one of the motors. Use a marker pen to label it 'right' and draw an arrow
 --- /task ---
 
 --- task ---
-Now open a Python shell by clicking **Menu** > **Programming** > **Python 3 (IDLE)**. Then click **File** > **New File** to open an empty script.
+Now open a Python shell by clicking **Menu** > **Programming** > **mu**. 
 --- /task ---
 
 --- task ---
-In the new file, type the following to import the `Robot` class and create a `Robot` object. You can name it anything you like. In this resource, the robot is called `robby`.
+Type the following to import the `Robot` class and create a `Robot` object. You can name it anything you like. In this resource, the robot is called `robby`.
 
 ```python
 from gpiozero import Robot
@@ -22,7 +22,7 @@ robby = Robot(left=(7,8), right=(9,10))
 --- /task ---
 
 --- task ---
-Save you file and call it `robby.py` or something similar. You can then run it by pressing <kbd>F5</kbd> on your keyboard.
+Save you file and call it `robby.py` or something similar. You can then run it by clicking **Run**.
 --- /task ---
 
 --- task ---
