@@ -9,7 +9,7 @@ Choose one of the motors. Use a marker pen to label it 'right' and draw an arrow
 --- /task ---
 
 --- task ---
-Now open a Python shell by clicking **Menu** > **Programming** > **mu**. 
+Now open **mu** from the Raspberry Pi **Programming menu**. 
 --- /task ---
 
 --- task ---
@@ -26,7 +26,7 @@ Save you file and call it `robby.py` or something similar. You can then run it b
 --- /task ---
 
 --- task ---
-Now switch over to the shell and type the following to observe which way the motors turn.
+Now open a python shell by clicking the terminal icon in the taskbar at the top of the screen, then type 'python' and press `Enter`. Now type the following to observe which way the motors turn.
 
 ```python
 robby.forward()
