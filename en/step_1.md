@@ -16,6 +16,9 @@ This resource covers elements from the following strands of the [Raspberry Pi Di
 
 - [Combine inputs and/or outputs to create projects or solve a problem](https://www.raspberrypi.org/curriculum/physical-computing/builder)
 - [Use manufacturing techniques and tools to create prototypes](https://www.raspberrypi.org/curriculum/manufacture/builder)
+
+This resource is also available on the FutureLearn platform with our free course [Robotics with Raspberry Pi: Build and Program Your First Robot Buggy](https://www.futurelearn.com/courses/robotics-with-raspberry-pi){:target="_blank"}.
+
 --- /collapse ---
 
 --- collapse ---
