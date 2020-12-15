@@ -1,6 +1,6 @@
 ## Introduction
 
-In this project you will build a robot buggy that you can program to move around using simple Python commands.
+In this project you will build a robot buggy that you can program to move around using simple Python commands. You can also learn how to build a robot buggy on our [FutureLearn](https://www.futurelearn.com/courses/robotics-with-raspberry-pi) course.
 
 ![finished](images/finished.gif)
 
