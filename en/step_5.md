@@ -6,6 +6,7 @@ Here's a simple script to make it go in a square shape (you may need to change t
 
 ```python
 from gpiozero import Robot
+from time import sleep
 robot = Robot(left = (7, 8), right = (9, 10))
 while True:
 	robot.forward()
