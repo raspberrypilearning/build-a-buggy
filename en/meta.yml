@@ -2,7 +2,7 @@
 title: Build a robot buggy
 hero_image: images/banner.png
 description: Build and control a robot buggy
-original_url:
+original_url: 
 theme: violet
 duration: 3
 listed: true
@@ -18,9 +18,11 @@ version: 4
 last_tested: 2017-01-01
 steps:
 - title: Introduction
-  completion: engaged
 - title: Set up your motors
 - title: Left, right, forward, backward
+  completion:
+  - engaged
 - title: Assemble your robot
-  completion: internal
+  completion:
+  - internal
 - title: 'Challenge: program your robot'
