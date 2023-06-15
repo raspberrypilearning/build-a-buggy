@@ -25,7 +25,7 @@ Remove the plastic clip from the motor to make soldering to the contacts easier.
 --- task ---
 Solder the wires to each of the terminals on the motor. It doesn't matter which wire goes to which terminal. The reattach the plastic clips.
 
-![solder wires](images/solder-motor.gif)
+![Animation of a wire being inserted into a terminal on a motor. A soldering iron is held on the terminal before solder is applied to solidify the connection.](images/solder-motor.gif)
 --- /task ---
 
 --- task ---
