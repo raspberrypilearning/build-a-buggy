@@ -1,38 +1,17 @@
-## Introduction
+## What you will make
 
-In this project you will build a robot buggy that you can program to move around using simple Python commands. You can also learn how to build a robot buggy on our [FutureLearn](https://www.futurelearn.com/courses/robotics-with-raspberry-pi) course.
+In this project you will build a robot buggy that you can program to move around using simple Python commands. 
 
-![finished](images/finished.gif)
+![A robot buggy moves around on the floor](images/finished.gif)
 
---- collapse ---
----
-title: What you will learn
----
-- How to set up a motor controller board with two motors
-- How to control motors using Python
-- How to build a robot chassis
+### You will need:
 
-This resource covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](https://www.raspberrypi.org/curriculum/):
+![The hardware required](images/hardware.jpg)
 
-- [Combine inputs and/or outputs to create projects or solve a problem](https://www.raspberrypi.org/curriculum/physical-computing/builder)
-- [Use manufacturing techniques and tools to create prototypes](https://www.raspberrypi.org/curriculum/manufacture/builder)
-
-This resource is also available on the FutureLearn platform with our free course [Robotics with Raspberry Pi: Build and Program Your First Robot Buggy](https://www.futurelearn.com/courses/robotics-with-raspberry-pi){:target="_blank"}.
-
---- /collapse ---
-
---- collapse ---
----
-title: What you will need
----
-- Note that not all of the following hardware is required to create the buggy. However, if you are planning to add autonomous capability (self-driving) to your robot buggy, then you will need additional bits in the 'optional' list.
-
-### Hardware
-
-![hardward](images/hardware.jpg)
+You can buy a kit of [here](https://thepihut.com/products/camjam-edukit-3-robotics){:target="_blank"} that contains most of these electronic components, or source them yourself.
 
 #### Basic buggy
-- Raspberry Pi 3
+- Raspberry Pi (any model with a pin header)
 - Motor controller board
 - 2 × 3V - 6V DC motors
 - 2 × wheels
@@ -40,26 +19,16 @@ title: What you will need
 - 4 × AA batteries
 - Ball caster
 - Wire or jumper leads
-- A USB Battery pack
+- USB power bank
 - Screw driver
-- Soldering iron and solder
 - Wire strippers
-- Small cardboard or plastic box and glue/tape
+- Small cardboard or plastic box
+- Adhesives (duct tape/putty/glue)
+- Soldering iron and solder (if your motors' wires are not already attached)
+
+If you are planning to add autonomous capability (self-driving) to your robot buggy, then you will need these additional optional bits:
 
 #### Optional additional components
 - Breadboard
 - VL53L0X time-of-flight range finder or ultrasonic distance sensor
 - 2 × line following sensors
-- 18650 battery, battery clip, USB charge/discharge board (or USB power bank)
-You can view all the required components on this [AliExpress Wish List](https://my.aliexpress.com/wishlist/shared.htm?groupId=100000000943756&shortkey=i6BnQZNJ&addresstype=600), but they can be ordered/bought anywhere, and alternatives are available.
-
-### Software
-- The latest version of the Raspbian operating system
-
-### Additional extras
-- Small cardboard box
-- Adhesives (duct tape/putty/glue)
-
---- /collapse ---
-
-

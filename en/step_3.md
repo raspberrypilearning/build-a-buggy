@@ -9,42 +9,45 @@ Choose one of the motors. Use a marker pen to label it 'right' and draw an arrow
 --- /task ---
 
 --- task ---
-Now open **mu** from the Raspberry Pi **Programming menu**. 
+Open **Thonny** from the Raspberry Pi **Programming menu**. 
 --- /task ---
 
 --- task ---
-Type the following to import the `Robot` class and create a `Robot` object. You can name it anything you like. In this resource, the robot is called `robby`.
+Type the following to import the `Robot` class and create a `Robot` object. You can name it anything you like. In this resource, the robot is called `robot`.
 
 ```python
 from gpiozero import Robot
-robby = Robot(left=(7,8), right=(9,10))
+robot = Robot(left=(7,8), right=(9,10))
 ```
 --- /task ---
 
 --- task ---
-Save you file and call it `robby.py` or something similar. You can then run it by clicking **Run**.
+Save you file and call it `robot.py` or something similar. 
+
+Run it by clicking **Run**.
 --- /task ---
 
 --- task ---
-Now open a python shell by clicking the terminal icon in the taskbar at the top of the screen, then type 'python' and press `Enter`. Now type the following to observe which way the motors turn.
+Open a Python shell by clicking the terminal icon in the taskbar at the top of the screen, then type 'python' and press `Enter`. Now type the following to observe which way the motors turn.
 
-```python
-robby.forward()
+```bash
+robot.forward()
 ```
 
-You can stop them by typing `robot.stop()`.
+Stop the motors by typing `robot.stop()`.
 
+**TODO** Update image
 ![motors turning](images/motor-test.gif)
 --- /task ---
 
 --- task ---
-Now, type the following command, and note which motor changes direction on the second command. 
+Type the following command, and note which motor changes direction on the second command. 
 
-```python
-robby.forward(0.4)
-robby.right(0.4)
+```bash
+robot.forward(0.4)
+robot.right(0.4)
 ```
-The `0.4` makes the motors go a little slower, so it is easy to see which way they turn.
+**Note**: The `0.4` makes the motors go a little slower, so it is easy to see which way they turn.
 --- /task ---
 
 --- task ---
@@ -53,19 +56,19 @@ The motor that changed direction is the right-hand motor. If that was the one yo
 
 ```python
 ## e.g. change
-robby = Robot(left=(7,8), right=(9,10))
+robot = Robot(left=(7,8), right=(9,10))
 ## to
-robby = Robot(left=(9,10), right=(7,8))
+robot = Robot(left=(9,10), right=(7,8))
 ```
 --- /task --- 
 
-Now that you have the 'left' and 'right' sorted, you need to make sure you have **forward** and **backward** set up correctly.
+Now that you have the 'left' and 'right' sorted, make sure you have **forward** and **backward** set up correctly.
 
 --- task ---
 Again drive both motors forward.
 
-```python
-robby.forward(0.4)
+```bash
+robot.forward(0.4)
 ```
 
 Check that both motors are turning in the direction shown in the diagram below.
@@ -76,9 +79,9 @@ If the right-hand motor is turning in the wrong direction, alter your `robot` ob
 
 ```python
 ## e.g. change
-robby = Robot(left=(9,10), right=(7,8))
+robot = Robot(left=(9,10), right=(7,8))
 ## to
-robby = Robot(left=(9,10), right=(8,7))
+robot = Robot(left=(9,10), right=(8,7))
 ```
 
 If the left-hand motor is turning the wrong way, then do the same for its pin numbers.
