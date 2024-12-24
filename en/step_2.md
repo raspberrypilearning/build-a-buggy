@@ -36,19 +36,9 @@ Using a small screwdriver, loosen the screws in the terminal blocks labeled **A*
 
 **Note**: Have a look at the documentation for your board if your labels are different. 
 
-Strip the ends of the wires (you can snip off the pin or socket ends if you need to) and insert the stripped ends of wire into the terminal blocks.
+Insert the stripped ends of wire into the terminal blocks and tighten the screws.
 
-**TODO**: Update image
-![inserted wires](images/wires-in-board.jpg)
---- /task ---
-
---- task ---
-
-Tighten the screws up so that the wires are held firmly in the terminal blocks.
-
-**TODO**: Update image
-![terminal block](images/wire-in-block.jpg)
-
+![inserted wires](images/wires-in-board.png)
 --- /task ---
 
 ### Powering the motors
@@ -60,15 +50,9 @@ Loosen the screws in the terminal blocks labeled **+** and **-**.
 
 Take the AA battery holder and insert the red wire into the **+** terminal block. The black wire goes into the **-** block. It is important that you get this the correct way around.
 
-**TODO**: Update image
-![Battery holder](images/battery-holder.jpg)
---- /task ---
+Tighten the screws.
 
---- task ---
-Tighten the screws so that the wires are held firmly in place.
-
-**TODO**: Update image
-![Battery terminals](images/battery-terminals.jpg)
+![Battery holder](images/battery-holder.png)
 --- /task ---
 
 --- task ---
@@ -78,5 +62,5 @@ Tighten the screws so that the wires are held firmly in place.
 Push the motor controller board onto the GPIO header of your Raspberry Pi.
 The motor and power terminals should face the HDMI port(s).
 
-![Motor controller mounted on a Raspberry Pi](images/motor-controller-mounted.jpg)
+![Motor controller mounted on a Raspberry Pi](images/motor-controller-mounted.png)
 --- /task ---
