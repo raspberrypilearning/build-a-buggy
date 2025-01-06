@@ -8,45 +8,41 @@ There is no standard way to build your prototype robot chassis, but please note:
 
 It's always a good idea to build a prototype chassis first. Eventually, you can learn how to laser-cut or 3D print a chassis, but in this project, a cardboard box is used as a temporary solution.
 
-![chassis-0](images/chassis-0.jpg)
-
 --- task ---
-Place your motors inside the box, in roughly the position that you would like them to sit. 
+Position your motors where you would like them to sit in your box. 
 
-Use a pen to mark the place where each motor's axle will need to pass through the walls of the box. Make sure you are giving your wheels enough room to spin around.
-![chassis-1](images/chassis-1.jpg)
+Use a pen to mark the place where each motor's axle will pass through the wall of the box. Make sure you are giving your wheels enough room to spin around.
+![Photo of a pen being used to mark position of an axle](images/chassis-1.png)
 --- /task ---
 
 --- task ---
-Use a sharp object to poke holes through the sides of the box so that the motors' axles can fit through.
-![chassis-2](images/chassis-2.jpg)
+Poke holes through the sides of the box so that the axles can fit through.
+![A screwdriver is poked through a cardboard box](images/chassis-2.png)
 
-**TODO** Crop image
-![chassis-3](images/chassis-3.jpg)
---- /task ---
-
---- task ---
-Fix the motors in place. Use an adhesive putty or tape to hold them down.
-**TODO** Crop image
-![chassis-4](images/chassis-4.jpg)
 --- /task ---
 
 --- task ---
 Attach the wheels to the axles.
-**TODO** Update image
-![chassis-5](images/chassis-5.jpg)
+
+You might want to fix the motors in place using an adhesive putty or tape to hold them down.
+
+![The wheels attached to the axles](images/chassis-3.png)
+
 --- /task ---
 
 --- task ---
 Screw a ball caster to the front of the container to act as a third wheel.
-![chassis-6](images/chassis-6.jpg)
-![chassis-7](images/chassis-7.jpg)
+![A screwdriver is used to secure the castor holder to the underside of the box](images/chassis-4.png)
+![The screws bolted into position](images/chassis-5.png)
+![The caster is secured in its holder underneath the box](images/chassis-6.png)
 --- /task ---
 
 --- task ---
-If you're using a power bank, you can now power up your Raspberry Pi. If you want to make your own power bank, then follow the guide below.
-**TODO** Update image
-![chassis-8](images/chassis-8.jpg)
+Power up your Raspberry Pi. 
+
+You can use a power bank to give your robot some freedom!
+
+If you want to make your own power bank, then follow the guide below.
 
 [[[generic-electronics-power-bank]]]
 --- /task ---
