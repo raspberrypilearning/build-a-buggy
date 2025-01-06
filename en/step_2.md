@@ -32,7 +32,7 @@ Some motors don't have wires attached, so you will need to solder these on. If y
 
 --- task ---
 
-Using a small screwdriver, loosen the screws in the terminal blocks labeled **A** and **B**. 
+Using a small screwdriver, loosen the screws in the terminal blocks labelled **A** and **B**. 
 
 **Note**: Have a look at the documentation for your board if your labels are different. 
 
@@ -46,7 +46,7 @@ Insert the stripped ends of wire into the terminal blocks and tighten the screws
 The motors require more power than the Raspberry Pi can provide. Therefore, you will use four AA batteries to power them.
 
 --- task ---
-Loosen the screws in the terminal blocks labeled **+** and **-**. 
+Loosen the screws in the terminal blocks labelled **+** and **-**. 
 
 Take the AA battery holder and insert the red wire into the **+** terminal block. The black wire goes into the **-** block. It is important that you get this the correct way around.
 
