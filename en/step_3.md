@@ -82,7 +82,6 @@ robot.forward(0.4)
 
 Check that both motors are turning in the direction shown in the diagram below.
 
-**TODO** Update image
 ![direction of motors](images/motor_direction.png)
 
 If the right-side motor is turning in the wrong direction, alter your `robot` object by switching the order of the GPIO pin numbers. For instance:
