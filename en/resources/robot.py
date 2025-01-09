@@ -2,7 +2,7 @@ from gpiozero import Robot, DistanceSensor, LineSensor
 from time import sleep, time
 from threading import Thread
 
-remy = Robot(left=(9, 10), right = (7,8))
+robot = Robot(left=(9, 10), right = (7,8))
 #line = LineSensor(18)
 
 #robot.source_delay = 0.5

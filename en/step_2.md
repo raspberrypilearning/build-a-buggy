@@ -1,51 +1,44 @@
 ## Assembling the motors and board
 
-The first thing you will want to do is to connect your motor controller board to your Raspberry Pi, the battery pack, and your two motors, to test that they are all working.
+You need to connect your motor controller board to your Raspberry Pi, the battery pack, and your two motors, to test that they are all working.
 
-The instructions here are for L298N Dual H Bridge DC Stepper Motor Driver Controller Board, and they will be pretty similar for most motor controller boards. Check the documentation for your board if you are using a different one.
+**Note**: The instructions here will be pretty similar for most motor controller boards. Check the documentation for your board if you are using a different one.
 
-### Soldering wires to your motors
+--- collapse ---
 
-Most motors you can buy don't have wires, so you will need to solder these on. If you have never soldered before, then have a look at our [Getting started with soldering](https://projects.raspberrypi.org/en/projects/getting-started-with-soldering) resource.
+---
+title: Wires not attached to your motors?
+---
 
---- task ---
-Strip the ends of the wires to reveal the metal core.
+Some motors don't have wires attached, so you will need to solder these on. If you have never soldered before, then have a look at our [Getting started with soldering](https://projects.raspberrypi.org/en/projects/getting-started-with-soldering){:target="_blank"} resource.
+
++ Strip the ends of the wires to reveal the metal core.
 
 ![strip wires](images/strip-wire.jpg)
 	
---- /task ---
-
---- task ---
-Remove the plastic clip from the motor to make soldering to the contacts easier. You can do this with a screwdriver.
++ Remove the plastic clip from the motor to make soldering to the contacts easier. You can do this with a screwdriver.
 
 ![remove clip](images/motor-remove-clip.jpg)
 
---- /task ---
-
---- task ---
-Solder the wires to each of the terminals on the motor. It doesn't matter which wire goes to which terminal. The reattach the plastic clips.
++ Solder the wires to each of the terminals on the motor. It doesn't matter which wire goes to which terminal. Then re-attach the plastic clips.
 
 ![Animation of a wire being inserted into a terminal on a motor. A soldering iron is held on the terminal before solder is applied to solidify the connection.](images/solder-motor.gif)
---- /task ---
+
++ Trim the tips of the wires to ensure they do not touch the metal casing of the motor. You could also wrap the ends of the motors in electrical tape, to stop the soldered joints from breaking.
+
+--- /collapse ---
+
+### Connect the motors to the motor controller board
 
 --- task ---
-Trim the tips of the wires to ensure they do not touch the metal casing of the motor. It's also a good idea to wrap the ends of the motors in tape, to stop the soldered joints from breaking.
---- /task ---
 
-### Connect the motors to the board
+Using a small screwdriver, loosen the screws in the terminal blocks labelled **A** and **B**. 
 
-You will need to connect the motors to the board. For this you will require a small screwdriver.
+**Note**: Have a look at the documentation for your board if your labels are different. 
 
---- task ---
-Using a screwdriver, loosen the screws in the terminal blocks labeled **OUT1**, **OUT2**, **OUT3**, and **OUT4**. Have a look at the documentation for your board if your labels are different. Strip the ends of the wires (you can snip off the male or female ends if you need to) and insert the stripped ends of wire into the terminal blocks.
+Insert the stripped ends of wire into the terminal blocks and tighten the screws.
 
-![inserted wires](images/wires-in-board.jpg)
---- /task ---
-
---- task ---
-Tighten the screws up so that the wires are held firmly in the terminal blocks.
-
-![terminal block](images/wire-in-block.jpg)
+![inserted wires](images/wires-in-board.png)
 --- /task ---
 
 ### Powering the motors
@@ -53,35 +46,24 @@ Tighten the screws up so that the wires are held firmly in the terminal blocks.
 The motors require more power than the Raspberry Pi can provide. Therefore, you will use four AA batteries to power them.
 
 --- task ---
-Loosen the screws in the terminal blocks labeled **VCC**, **GND**, and **5V**. Take the AA battery holder and insert the red wire into the **VCC** terminal block. The black wire goes into the **GND** block. It is important that you get this the correct way around.
+Loosen the screws in the terminal blocks labelled **+** and **-**. 
 
-![battery holder](images/battery-holder.jpg)
+Take the AA battery holder and insert the red wire into the **+** terminal block. The black wire goes into the **-** block. It is important that you get this the correct way around.
+
+Tighten the screws.
+
+![Battery holder](images/battery-holder.png)
 --- /task ---
 
 --- task ---
-Tighten the screws so that the wires are held firmly in place.
 
-![battery terminals](images/battery-terminals.jpg)
---- /task ---
+### Connect the motor controller board to your Raspberry Pi
 
-### Connecting the board to your Raspberry Pi
+Push the motor controller board onto the first 26 GPIO pins of your Raspberry Pi.
 
-The board used in this project needs to be wired to the Raspberry Pi. Other boards may connect differently, and some boards can simply be placed onto the Raspberry Pi GPIO pins as a HAT. Make sure you look at the documentation for your board to see whether this is the case.
+![Motor controller positioned on the first 26 GPIO pins of a Raspberry Pi 5](images/pi5_motor_controller_position.png)
 
-On the board used here there are pins labeled **In1**, **In2**, **In3**, and **In4**, as well as two **GND** pins. Which GPIO pins on your Pi that you use is up to you; in this project, **GPIO 7**, **8**, **9**, and **10** have been used.
+The motor and power terminals should face the HDMI port(s).
 
---- task ---
-Use five female-to-female jumper leads to connect the Raspberry Pi GPIO pins to the pins on the motor controller board.
-
-|GPIO pin|connects to|board pin|
-|:------:|:---:|:-------:|
-|**7**|<-->|**In1**|
-|**8**|<-->|**In2**|
-|**9**|<-->|**In3**|
-|**10**|<-->|**In4**|
-|**GND**|<-->|**GND**|
-
-If your board does not have a **GND** pin, then strip the end of the female to female wire and secure it into the **GND** terminal block that your battery pack feeds into.
-
-![GPIO to board](images/gpio-board.jpg)
+![Motor controller mounted on a Raspberry Pi](images/motor-controller-mounted.png)
 --- /task ---

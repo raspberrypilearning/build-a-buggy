@@ -6,9 +6,11 @@ line = LineSensor(18)
 
 speed = 0.8
 
+
 def on_line():
     print('running on')
     robot.forward(speed)
+
 
 def find_line():
     print('running find')
@@ -39,6 +41,7 @@ def find_line():
             pass
         robot.stop()
         period += 0.05
+
 
 while True:
     if line.line_detected:

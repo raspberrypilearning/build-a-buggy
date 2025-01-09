@@ -1,15 +1,17 @@
 from gpiozero import LineSensor, Robot
-from time import sleep, time
+from time import sleep
 
 robot = Robot(left=(7, 8), right=(9, 10))
 line = LineSensor(18)
 
 speed = 0.5
 
+
 def on_line():
     robot.stop()
     sleep(0.2)
     robot.forward(speed)
+
 
 def find_line():
     robot.stop()
