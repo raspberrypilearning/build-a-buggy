@@ -1,4 +1,4 @@
-## More moves!
+## Challenge
 
 Now is your opportunity to program your robot!
 

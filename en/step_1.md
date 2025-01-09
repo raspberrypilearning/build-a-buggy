@@ -8,7 +8,7 @@ In this project you will build a robot buggy that you can program to move around
 
 ![The hardware required](images/hardware.jpg)
 
-You can buy a kit of [here](https://thepihut.com/products/camjam-edukit-3-robotics){:target="_blank"} that contains most of these electronic components, or source them yourself.
+You can buy a kit [here](https://thepihut.com/products/camjam-edukit-3-robotics){:target="_blank"} that contains most of these electronic components, or source them yourself.
 
 #### Basic buggy
 - Raspberry Pi (any model with a pin header)

@@ -28,6 +28,6 @@ steps:
 - title: Program your robot
   completion:
   - external
-- title: More moves!
+- title: Challenge
   challenge: true
 - title: What can you do now?

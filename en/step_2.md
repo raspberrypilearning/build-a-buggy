@@ -59,8 +59,11 @@ Tighten the screws.
 
 ### Connect the motor controller board to your Raspberry Pi
 
-Push the motor controller board onto the GPIO header of your Raspberry Pi.
+Push the motor controller board onto the first 26 GPIO pins of your Raspberry Pi.
+
 The motor and power terminals should face the HDMI port(s).
+
+![Motor controller positioned on the first 26 GPIO pins of a Raspberry Pi 5](images/pi5_motor_controller_position.png)
 
 ![Motor controller mounted on a Raspberry Pi](images/motor-controller-mounted.png)
 --- /task ---
